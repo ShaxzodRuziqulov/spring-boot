@@ -27,7 +27,7 @@ StudentResours {
     @GetMapping("/students/{id}")
     public ResponseEntity getOne(@PathVariable int id) {
         Student student = new Student(id, "" +
-                "ahodir", "Ruziqulov", "3-kurs");
+                "Bahodir", "Ruziqulov", "3-kurs");
         return ResponseEntity.ok(student);
     }
     @GetMapping("/students")
